@@ -136,7 +136,8 @@
     height: 90%;
     object-fit: cover;
     object-position: center;
-    margin-top: 18px;
+    margin-top: 20px;
+    border-radius: 50px;
 
 }
 #imagen_capturas3
@@ -226,6 +227,14 @@
     z-index: -1; /* Colocado detrás de otros elementos */
     overflow: hidden; /* Ocultar contenido sobrante */
     box-shadow: 0px 2px 4px rgba(41, 128, 185), 0px 0px 8px rgba(105, 158, 194, 0.815);
+}
+#medio_f{
+    height: 99%;
+    left: -30%;
+    top: 3px;
+    border-radius: 30px;
+    background: linear-gradient(0deg, rgba(151, 183, 212, 0.959) 0%, rgba(200, 220, 240, 1) 100%);
+
 }
 
 /* Creación de ondas sutiles */
@@ -513,10 +522,12 @@
     margin-top: 80px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 0px 5px rgba(41, 128, 185, 0.2);    
     height: 108vh;
+    background-color: #8080800a;
 }
 
 .caja-sobremi
 {
+    position: relative;
     width: 100%;
     height: 88vh;
     text-align: center;
@@ -660,8 +671,10 @@
 
 .caja-contacto
  {
+    position: relative;
     width: 100%;
     height: 100vh;
+    background-color: #8080800a;
  }
 
  .ul-contacto
@@ -1063,6 +1076,10 @@ button
 #cursor-none
 {
     cursor: auto;
+}
+#fotomia
+{
+    border-radius: 22px;
 }
 *{
     -webkit-tap-highlight-color: transparent;
@@ -1607,6 +1624,10 @@ button
         width: 100%;
         height: 40vh;
     }
+    #medio_f{
+    height: 83%;
+    left:0;
+}
     
 }
 
