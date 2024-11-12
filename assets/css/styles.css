@@ -383,7 +383,7 @@
 }
 .play:hover
 {
-    cursor: pointer;
+    
     box-shadow: var(--box-shadowhover);
 
 }
