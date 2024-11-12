@@ -1,3 +1,56 @@
+:root {
+  
+  --background-color:;
+    
+    
+  --text-color:;
+    --primary-color: #4a90e2; /* Color principal */
+  --box-shadow: 0px 2px 4px rgba(41, 128, 185), 0px 0px 8px rgba(105, 158, 194, 0.815);
+  --box-shadowhover: 0px 8px 10px rgba(41, 128, 185), 0px 0px 10px rgba(105, 158, 194, 0.815);
+
+  }
+  
+  .dark-mode {
+    --background-color:rgb(20, 20, 20);
+    
+   
+  --text-color: rgb(241, 241, 241);
+    --primary-color: #bb86fc;
+  --box-shadow: 0px 2px 4px rgba(18, 64, 98), 0px 0px 8px rgba(0, 56, 240, 0.781);
+  --box-shadowhover: 0px 8px 10px rgba(18, 64, 98), 0px 0px 10px rgba(0, 56, 240, 0.781);
+
+  }
+  
+
+.boton_modo
+{
+    position: fixed;
+    left: 95%;
+    top: 8px;
+    cursor: pointer;
+    z-index: 2;
+    width: 25px;
+    height: 25px;
+    margin: auto;
+    background: radial-gradient(circle, rgba(224, 185, 8, 0) -100%, rgb(236, 221, 13) 15%, rgba(20, 20, 20, 0.8) 70%);
+}
+.boton_modo.dark-mode
+{
+    background: radial-gradient(circle, rgba(80, 80, 80, 0) -83%, rgb(236, 221, 13) -6%, rgba(80, 80, 80, 0.8) 30%);
+}
+.bombilla
+{
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    width: auto; height: auto; 
+    max-width: 20x;  
+    max-height: 20px; 
+    background-size: contain;  
+    background-position: center; 
+    background-repeat:no-repeat;
+}
 .ul-proectos
 {
     text-align: center;
@@ -23,12 +76,18 @@
 .div-proyectos
 {
     overflow: hidden;   
-    background-color: rgb(131, 131, 131);
+    background: linear-gradient(0deg, rgba(6, 16, 26, 0.712) 0%, rgba(2, 16, 29, 1) 100%);
     height: 500px;
     width: 371px;
     box-shadow: 0px 2px 4px rgba(41, 128, 185), 0px 0px 8px rgba(105, 158, 194, 0.815);
     border-radius: 75px;
 }
+.div-proyectos.dark-mode{
+    background: linear-gradient(0deg, rgba(131, 131, 131, 0.712) 0%, rgb(99, 99, 99) 100%);
+
+}
+
+
 .div-proyectos:hover
 {
     background-color: rgb(117, 117, 117);
@@ -223,46 +282,76 @@
     left: 0;
     width: 100%;
     height: 53vh; /* Solo cubre la mitad de l primera sección */
-    background: linear-gradient(0deg, rgba(53, 135, 211, 0.712) 0%, rgba(200, 220, 240, 1) 100%);
     z-index: -1; /* Colocado detrás de otros elementos */
     overflow: hidden; /* Ocultar contenido sobrante */
-    box-shadow: 0px 2px 4px rgba(41, 128, 185), 0px 0px 8px rgba(105, 158, 194, 0.815);
-}
-#medio_f{
-    height: 99%;
-    left: -30%;
-    top: 3px;
-    border-radius: 30px;
-    background: linear-gradient(0deg, rgba(151, 183, 212, 0.959) 0%, rgba(200, 220, 240, 1) 100%);
+    box-shadow: var(--box-shadow);
+    background: linear-gradient(0deg, rgba(6, 16, 26, 0.712) 0%, rgba(2, 16, 29, 1) 100%);
 
 }
+.medio_fondo.dark-mode{
+    box-shadow: var(--box-shadow);
+    background: linear-gradient(0deg, rgba(53, 135, 211, 0.712) 0%, rgba(200, 220, 240, 1) 100%);
 
+}
+.medio_fondo.dark-mode::before, .medio_fondo.dark-mode::after
+    { 
+        opacity: 10%;
+        background: repeating-radial-gradient(
+            circle at 50% 0%, /* Coloca el centro de las ondas en el borde superior central */
+            rgba(255, 255, 255, 0.1), /* Color de la onda */
+            rgba(255, 255, 255, 0.1) 2px,
+            transparent 140px /* Mayor separación entre ondas */
+        );
+        opacity: 0.6;
+        
+}
 /* Creación de ondas sutiles */
 .medio_fondo::before, .medio_fondo::after {
     content: '';
     position: absolute;
     width: 200%; /* Más ancho que el contenedor para lograr una curva amplia */
     height: 100%;
-    background: repeating-radial-gradient(
-        circle at 50% 0%, /* Coloca el centro de las ondas en el borde superior central */
-        rgba(255, 255, 255, 0.1), /* Color de la onda */
-        rgba(255, 255, 255, 0.1) 2px,
+    background: repeating-radial-gradient( circle at 50% 0%, /* Coloca el centro de las ondas en el borde superior central */ 
+        rgba(1, 34, 90, 0.575), /* Color de la onda en modo oscuro */ 
+        rgba(39, 109, 230, 0.822) 2px, 
         transparent 140px /* Mayor separación entre ondas */
-    );
-    opacity: 0.6;
+        );
+        opacity: 2%;
     transform: rotate(15deg); /* Inclinación para un efecto de onda */
+}
+
+.medio_f{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 53vh; /* Solo cubre la mitad de l primera sección */
+    z-index: -1; /* Colocado detrás de otros elementos */
+    overflow: hidden; /* Ocultar contenido sobrante */
+    box-shadow: var(--box-shadow);
+    background: linear-gradient(0deg, rgba(6, 16, 26, 0.712) 0%, rgba(2, 16, 29, 1) 100%);
+    height: 99%;
+    left: -30%;
+    top: 3px;
+    border-radius: 30px;
+    background: linear-gradient(0deg, rgba(6, 16, 26, 0.712) 0%, rgba(2, 16, 29, 1) 100%);
+}
+
+.medio_f.dark-mode{
+    background: linear-gradient(0deg, rgba(151, 183, 212, 0.959) 0%, rgba(200, 220, 240, 1) 100%);
+    box-shadow: var(--box-shadow);
 }
 
 /* Configuración adicional para las ondas */
 .medio_fondo::before {
-    top: -20%;
-    left: -30%;
+    top: -30%;
+    left: -40%;
 }
 
 .medio_fondo::after {
-    top: 25%;
-    left: -40%;
-    transform: rotate(-10deg);
+    top: 45%;
+    left: -60%;
+    transform: rotate(-30deg);
 }
 
 .texto-tiutlo
@@ -294,13 +383,13 @@
     height: 46%;
     object-fit: scale-down;
     object-position: center;
-    box-shadow: 0px 2px 4px rgba(41, 128, 185), 0px 0px 5px rgba(105, 158, 194, 0.815);
+    box-shadow: var(--box-shadow);
     margin-top: 6px;
 }
 .play:hover
 {
     cursor: pointer;
-    box-shadow: 0px 8px 10px rgba(41, 128, 185), 0px 0px 10px rgba(105, 158, 194, 0.815);
+    box-shadow: var(--box-shadowhover);
 
 }
 
@@ -347,7 +436,6 @@
 .descarga
 {
     display: flex;
-    background-color: rgba(41, 128, 185);
     width: 190px;
     height: 60px;
     justify-content: center;
@@ -356,13 +444,22 @@
     box-shadow: 0px 2px 4px rgba(41, 128, 185), 0px 0px 5px rgba(105, 158, 194, 0.815);
     cursor: pointer;
     color: white;
+    background: radial-gradient(circle, rgba(20, 20, 20, 0) -35%, rgb(20, 53, 87) -30%, rgba(12, 31, 51, 0.8) 89%);
+    box-shadow: 0 0 5px rgba(24, 101, 245, 0.5), 0 0 8px rgba(24, 101, 245, 0.5), 0 0 9px rgba(24, 101, 245, 0.5);
+
+}
+.descarga.dark-mode
+{
+    box-shadow: 0px 2px 4px rgba(41, 128, 185), 0px 0px 5px rgba(105, 158, 194, 0.815);
+    background: radial-gradient(circle, rgba(20, 20, 20, 0) 0%, rgb(41, 128, 185) 0%, rgba(8, 90, 184, 0.8) 80%); 
+    box-shadow: 0px 2px 4px rgba(41, 128, 185), 0px 0px 5px rgba(105, 158, 194, 0.815);
+
 }
 .descarga:hover
 {
     background-color: rgb(114, 169, 206);
-    width: 191px;
-    height: 61px;
-    color: rgb(209, 206, 206);
+    box-shadow: 0 0 8px rgba(24, 101, 245, 0.5), 0 0 12px rgba(24, 101, 245, 0.5), 0 0 12px rgba(24, 101, 245, 0.5);
+
 }
 #p-boton
 {
@@ -371,6 +468,11 @@
 }
 
 #p-boton2
+{
+    font-size: 13px;
+    color: white;
+}
+#p-boton3
 {
     font-size: 13px;
     color: white;
@@ -456,7 +558,7 @@
     margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
-    color: white;
+    color: transparent;
 }
 
 .otrastecnologias
@@ -466,21 +568,53 @@
     width: 100%;
     height: auto;
     justify-content: center;
-    gap: 5px;
+    gap: 5%;
 }
 
-.cajasotras
+#cajasotras
 {
     flex: 1;
     width: 100px;
     height: 100px;
-    margin: 3%;
+    margin: auto;
 }
-#logos1:hover
+.logos1
 {
-    width: 215px;
-    height: 215px;
+     position: absolute; 
+     top: 50%; 
+     left: 50%; 
+     transform: translate(-50%, -50%); 
+     width: auto; height: auto; 
+     max-width: 150px;  
+     max-height: 150px; 
+     background-size: contain;  
+     background-position: center; 
+     background-repeat:no-repeat;
 }
+#logos_peq
+{
+    max-width: 130px;
+     max-height: 130px;  
+}
+.logos2
+{
+     position: absolute; 
+     top: 50%; 
+     left: 50%; 
+     transform: translate(-50%, -50%); 
+     width: auto; height: auto; 
+     max-width: 80px;  
+     max-height: 80px; 
+     background-size: contain;  
+     background-position: center; 
+     background-repeat:no-repeat;
+}
+#logos2_peq
+{
+    max-width: 65px;
+     max-height: 65px;  
+}
+
 #logos2:hover
 {
     width: 105px;
@@ -563,7 +697,7 @@
     padding-left: 40px;
     text-align: left;
 }
-#p-sobremi
+.p-sobremi
 {
     font-size: 20px;
     margin-inline-start: 12px;
@@ -579,6 +713,7 @@
     margin-top: 4px;
     margin-bottom: 0%;
     font-style: italic;
+    color: rgb(24, 24, 24);
 }
 
 .li-botones-desc
@@ -648,7 +783,6 @@
     width: 200px;
     height: 60px;
     border-radius: 5px;
-    background-color: white;
     align-items: center;
     justify-content: center;
 }
@@ -699,10 +833,15 @@
     display: grid;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 0px 6px rgba(41, 128, 185), 0px 0px 6px rgba(105, 158, 194, 0.815);
-    background-color: white;
     width: 480px;
     height: 60px;
+    background: radial-gradient(circle, rgba(20, 20, 20, 0) -35%, rgb(20, 53, 87) -30%, rgba(12, 31, 51, 0.8) 89%);
+    box-shadow: 0 0 5px rgba(24, 101, 245, 0.5), 0 0 8px rgba(24, 101, 245, 0.5), 0 0 9px rgba(24, 101, 245, 0.5);
+ }
+ .email.dark-mode
+ {
+    box-shadow: 0px 0px 6px rgba(41, 128, 185), 0px 0px 6px rgba(105, 158, 194, 0.815);
+    background: radial-gradient(circle, rgba(105, 158, 194, 0) -35%, rgb(88, 120, 141) -30%, rgba(58, 95, 119, 0.8) 89%);
  }
  .email:hover
  {
@@ -711,13 +850,19 @@
  #copiarmail
  {
     display: grid;
-    background-color: rgb(110, 167, 204);
     width: 60px;
     height: 60px;
     margin-left: 20px;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    background: radial-gradient(circle, rgba(20, 20, 20, 0) -35%, rgb(20, 53, 87) -30%, rgba(12, 31, 51, 0.8) 89%);
+    box-shadow: 0 0 5px rgba(24, 101, 245, 0.5), 0 0 8px rgba(24, 101, 245, 0.5), 0 0 9px rgba(24, 101, 245, 0.5);
+ }
+ #copiarmail.dark-mode
+ {
+    box-shadow: 0px 0px 6px rgba(41, 128, 185), 0px 0px 6px rgba(105, 158, 194, 0.815);
+    background: radial-gradient(circle, rgba(105, 158, 194, 0) -35%, rgb(88, 120, 141) -30%, rgba(58, 95, 119, 0.8) 89%);
  }
  #copiarmail:hover
  {
@@ -735,7 +880,7 @@
     gap: 10%;
 }
 
- .cajas-iconos
+ #cajas-iconos
  {
      flex: 1;
      width: 120px;
@@ -746,6 +891,31 @@
 {
     width: 95%;
     height: 95%;
+    cursor: pointer;
+}
+#icon-contactolink
+{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+#icon-contactolink:hover
+{
+    width: 105%;
+    height: 105%;
+    cursor: pointer;
+}
+#icon-contactootra
+{
+    width: 85%;
+    height: 85%;
+    margin-top: 7%;
+    cursor: pointer;
+}
+#icon-contactootra:hover
+{
+    width: 92%;
+    height: 92%;
     cursor: pointer;
 }
 #icon-contacto2
@@ -837,11 +1007,11 @@
 {
     height:100%;
     width: 100%;
+    margin: auto;
     overflow: hidden;
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url(../images/logo_oscuro.png);
+    background-image: url(../images/logo_transparent.png);
 }
 .oscuro
 {
@@ -894,6 +1064,7 @@
 {
     font-size: small;
     margin: 3px;
+    color: rgba(53, 53, 53, 0.781);
 }
 
 .grid-logo-footer
@@ -923,10 +1094,11 @@
 body
 {
     margin: 0;
+    background-color: var(--background-color);
 }
 p
 
-{
+{   color:var(--text-color) ;
     font-size: 20px;
     font-family: 'titulos','Courier New', Courier, monospace;;
 }
@@ -935,7 +1107,8 @@ h1
     margin: auto;
     margin-top: 10px;
     font-size: 42px;  
-    font-family: 'titulos', 'Courier New', Courier, monospace;    
+    font-family: 'titulos', 'Courier New', Courier, monospace;
+    color: var(--text-color);
 }
 
 h2
@@ -943,15 +1116,17 @@ h2
     font-size: 30px;
     font-family: 'titulos','Courier New', Courier, monospace;
     margin: 2px;
+    color: var(--text-color);
 }
 h3
 {
     font-family: 'titulo4','Courier New', Courier, monospace;
+    color: var(--text-color);
 }
 
 h4
 {
-    color: white;
+    color: var(--text-color);
     margin-block-start: 0px;
     margin-block-end: 0px;
     font-size: 20px;
@@ -976,10 +1151,14 @@ nav
     width: 100%;
     z-index: 100;
     border-bottom: 1px solid black;
-    background-color: rgb(80, 80, 80);
+    background-color:rgb(20, 20, 20) ;
     opacity: 88%;
 }
+nav.dark-mode
+{
+    background-color: rgb(80, 80, 80);
 
+}
 
 ul
 {
@@ -996,11 +1175,6 @@ ul
 {
     margin-block-start: 0;
     margin-block-end: 0;
-}
-
-body
-{
-    background-color: white;
 }
 
 .borde-gris
@@ -1050,7 +1224,7 @@ button
 {
     border: none;
     cursor: pointer;
-    background-color: white;
+    background-color: transparent;
 }
 #volver1
 {
@@ -1084,6 +1258,57 @@ button
 *{
     -webkit-tap-highlight-color: transparent;
 }
+
+.ring 
+{ 
+    width: 200px; 
+    height: 200px; 
+    border-radius: 50%; 
+    background: radial-gradient(circle, rgba(20,20,20, 0) 63%, rgb(41, 128, 185) 70%, rgba(8, 90, 184, 0.8) 90%);
+    box-shadow: 0 0 12px rgba(24, 101, 245, 0.5), 0 0 14px rgba(24, 101, 245, 0.5), 0 0 24px rgba(24, 101, 245, 0.5); 
+    position: relative;
+    margin: auto;
+    margin-top: 7%;
+}
+.ring.dark-mode 
+{ 
+    width: 200px; 
+    height: 200px; 
+    border-radius: 50%; 
+    background: radial-gradient(circle, rgba(20,20,20, 0) 63%, rgb(41, 128, 185) 80%, rgba(8, 90, 184, 0.8) 500%);
+    box-shadow: 0 0 12px rgba(24, 101, 245, 0.5), 0 0 14px rgba(24, 101, 245, 0.5), 0 0 24px rgba(24, 101, 245, 0.5); 
+    position: relative;
+    margin: auto;
+    margin-top: 7%;
+}
+.ring:hover
+{
+    background: radial-gradient(circle, rgba(20,20,20, 0) 55%, rgb(41, 128, 185) 70%, rgba(8, 90, 184, 0.8) 90%);
+    box-shadow: 0 0 15px rgba(24, 101, 245, 0.5), 0 0 19px rgba(24, 101, 245, 0.5), 0 0 29px rgba(24, 101, 245, 0.5); 
+
+}   
+.square { 
+    position: relative;
+    margin: auto;
+    width: 100px; 
+    height: 100px;
+    border-radius: 6px; 
+    background: radial-gradient(circle, rgba(20, 20, 20, 0) 50%, rgb(41, 128, 185) 40%, rgba(8, 90, 184, 0.8) 85%); 
+    box-shadow: 0 0 8px rgba(24, 101, 245, 0.5), 0 0 10px rgba(24, 101, 245, 0.5), 0 0 20px rgba(24, 101, 245, 0.5); 
+}
+.square:hover{
+    background: radial-gradient(circle, rgba(20, 20, 20, 0) 50%, rgb(41, 128, 185) 40%, rgba(8, 90, 184, 0.8) 100%); 
+    box-shadow: 0 0 18px rgba(24, 101, 245, 0.5), 0 0 18px rgba(24, 101, 245, 0.5), 0 0 18px rgba(24, 101, 245, 0.5); 
+}
+#textobn
+{
+ color: black;
+}
+address
+{
+    color: var(--text-color);
+}
+
 @media (max-width:1100px) {
     .ul-tecn
     {
@@ -1284,7 +1509,7 @@ button
         height: 0%;
         width:  0%;
     }
-    #p-sobremi
+    .p-sobremi
     {
         font-size: 17px;
         margin-inline-start: 12px;
@@ -1307,10 +1532,21 @@ button
     {
         font-size: 18px;
     }
+    .boton_modo
+    {
+        width: 13px;
+        height: 13px;
+    }
+    .bombilla
+    {
+        width: 12px;
+        height: 12px;
+    }
 
 }
 
 @media (max-width:920px) {    
+
     h1
     {
         font-size: 18px;
@@ -1352,6 +1588,10 @@ button
     {
         font-size: 9px;
     }
+    #p-boton3
+    {
+    color:transparent;
+    }
 
     .grid-tecnologias
     {  
@@ -1361,23 +1601,44 @@ button
         height: 78%;
         padding-left: 0px;
     }
-   #logos1
+    .ring
     {
-        width: 120px;
-        height: 120px;
-        margin: 10px;
+        margin-top: 20px;
+        width: 130px; 
+        height: 130px; 
     }
-    #logos1:hover
+    .ring.dark-mode
     {
-        width: 125px;
-        height: 125px;
-        margin: 0px;
+        margin-top: 20px;
+        width: 130px; 
+        height: 130px; 
     }
-    .cajasotras
+    .ring:hover
+    {
+        width: 130px; 
+        height: 130px;
+        background: radial-gradient(circle, rgba(20,20,20, 0) 50%, rgb(41, 128, 185) 70%, rgba(8, 90, 184, 0.8) 90%);
+    }
+    .logos1
+    {
+        max-width: 100px;  
+        max-height: 100px; 
+    }
+    #logos_peq
+    {
+        max-width: 85px;  
+        max-height: 85px;  
+    }
+    .logos2
+    {
+        max-width: 55px;
+        max-height: 55px;
+    }
+    #cajasotras
     {
         flex: 1;
-        width: 80px;
-        height: 80px;
+        width: 68px;
+        height: 68px;
         margin: 3%;
     }
     #logos2
@@ -1385,6 +1646,12 @@ button
         width: 70px;
         height: 70px;
     }
+    #logos2_peq
+    {
+        width: 46px;
+        height: 46px;
+    }
+    
     #logos2:hover
     {
         width: 78px;
@@ -1473,7 +1740,7 @@ button
     
     #h2hmargen1
     {
-        margin-top: 80px;
+        margin-top: 60px;
     }
     #h2hmargen
     {
@@ -1503,7 +1770,7 @@ button
         height: 0%;
         width:  0%;
     }
-    #p-sobremi
+    .p-sobremi
     {
         font-size: 16px;
         margin-inline-start: 12px;
@@ -1520,7 +1787,7 @@ button
         height: 40px;
     }
 
-    .cajas-iconos
+    #cajas-iconos
     {
         width: 80px;
         height: 80px;
@@ -1624,11 +1891,22 @@ button
         width: 100%;
         height: 40vh;
     }
-    #medio_f{
+    .medio_f{
     height: 83%;
     left:0;
-}
-    
+    }
+    .boton_modo
+    {
+        width: 10px;
+        height: 10px;
+        top: 5px;
+        left: 1px;
+    }
+    .bombilla
+    {
+        width: 9px;
+        height: 9px;
+    }
 }
 
 @media (max-width:920px) and (max-height:1000px){  
@@ -1753,11 +2031,11 @@ button
     {
         font-size: 27px;
     }
-    .cajasotras
+    #cajasotras
     {
         flex: 1;
-        width: 100px;
-        height: 100px;
+        width: 85px;
+        height: 85px;
         margin: 3%;
     }
     #logos2

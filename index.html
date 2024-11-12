@@ -33,6 +33,7 @@
 <body>
     <header>
     <nav class="nave">
+        <button class="boton_modo" id="toggle-dark-mode"><img src="assets/images/bombilla.png" alt="bombilla light mode - dark mode" title="cambiar modo vista dark mode" class="bombilla"></button>
         <ul class="navul">
             <li class="navliprubea" id="quitarlogo"><div id="divnav-logo" id="quitarlogo"><div id="logotipo"></div></div></li>
             <li class="navli">  
@@ -84,10 +85,10 @@
                         <li class="tecdividido"><div id="h2hmargen"><h3>PRINCIPALES</h3></div>
                             <div id="centrar">
                             <ul class="grid-tecnologias">
-                                <li id="centrar"><div><img src="assets/images/javalogo2.png" alt="java" title="JAVA" id="logos1" ></div></li>
-                                <li id="centrar"><div><img src="assets/images/pythnologooo.png" alt="python" title="PYTHON" id="logos1"></div></li>
-                                <li id="centrar"><div><img src="assets/images/jslogo.png" alt="javascript" title="JAVASCRIPT" id="logos1"></div></li>
-                                <li id="centrar"><div><img src="assets/images/oracle.png" alt="oracle SQL" title="ORACLE SQL" id="logos1"></div></li>
+                                <li class="ring"><img src="assets/images/java lo.png" alt="java" title="JAVA" class="logos1" ></li>
+                                <li class="ring"><img src="assets/images/pythonlogo.png" alt="python" title="PYTHON" class="logos1"></li>
+                                <li class="ring"><img src="assets/images/javascript logo.png" alt="javascript" title="JAVASCRIPT" class="logos1"></li>
+                                <li class="ring"><img src="assets/images/SqlLogo.png" alt="oracle SQL" title="ORACLE SQL" class="logos1" id="logos_peq"></li>
                             </ul>
                             </div>
                         </li>
@@ -95,22 +96,22 @@
                             <div id="margenotras"><h3><div id="margenotras"><p id="otras-tec-text">Bases</p></h3></div>
                         
                             <ul class="otrastecnologias">
-                                <li><div class="cajasotras"><img src="assets/images/mongo.png" alt="mongoDb" title="MONGODB" id="logos2"></div></li>
-                                <li><div class="cajasotras"><img src="assets/images/JSON.png" alt="JSON" title="JSON" id="logos2"></div></li>
-                                <li><div class="cajasotras"><img src="assets/images/mysql.png"alt="mySQL" title="MYSQL" id="logos2"></div></li>
+                                <li><div class="ring" id="cajasotras"><img src="assets/images/mongologo.png" alt="mongoDb" title="MONGODB" class="logos2"></div></li>
+                                <li><div class="ring" id="cajasotras"><img src="assets/images/JSON.png" alt="JSON" title="JSON" class="logos2" id="logos2_peq"></div></li>
+                                <li><div class="ring" id="cajasotras"><img src="assets/images/mysqllogo.png"alt="mySQL" title="MYSQL" class="logos2"></div></li>
                             </ul>
                         <div div id="margenotras"><h3><p id="otras-tec-text">Interfaces</p></h3></div>
                             <ul class="otrastecnologias">
-                                <li><div class="cajasotras"><img src="assets/images/htmllogo.png" alt="html" title="HTML" id="logos2"></div></li>
-                                <li><div class="cajasotras"><img src="assets/images/css.png" alt="CSS" title="CSS" id="logos2"></div></li>
-                                <li><div class="cajasotras"><img src="assets/images/php.png" alt="PHP" title="PHP" id="logos2"></div></li>
+                                <li><div class="ring" id="cajasotras"><img src="assets/images/html5logo.png" alt="html" title="HTML" class="logos2"></div></li>
+                                <li><div class="ring" id="cajasotras""><img src="assets/images/csslogo.png" alt="CSS" title="CSS" class="logos2"></div></li>
+                                <li><div class="ring" id="cajasotras"><img src="assets/images/php.png" alt="PHP" title="PHP" class="logos2"></div></li>
                             </ul>
                         <div id="margenotras"><h3><div id="margenotras1"><p id="otras-tec-text">Sistemas y Entornos</p></h3></div>  
                             <ul class="otrastecnologias">
-                                <li><div class="cajasotras"><img src="assets/images/ubuntu.png" alt="ubuntu" title="UBUNTU" id="logos2"></div></li>
-                                <li><div class="cajasotras"><img src="assets/images/windows.png" alt="Windows server" title="WINDOWS SERVER" id="logos2"></div></li>
-                                <li><div class="cajasotras"><img src="assets/images/git.png" alt=" GIT" title="GIT" id="logos2"></div></li>
-                                <li><div class="cajasotras"><img src="assets/images/cisco.png" alt="cisco" title="CISCO IT ESSENTIAL" id="logos2"></div></li>
+                                <li><div class="ring" id="cajasotras"><img src="assets/images/ubuntulogo.png" alt="ubuntu" title="UBUNTU" class="logos2"></div></li>
+                                <li><div class="ring" id="cajasotras"><img src="assets/images/windowslogo.png" alt="Windows server" title="WINDOWS SERVER" class="logos2"></div></li>
+                                <li><div class="ring" id="cajasotras"><img src="assets/images/gitlogo.png" alt=" GIT" title="GIT" class="logos2"></div></li>
+                                <li><div class="ring" id="cajasotras"><img src="assets/images/ciscologo.png" alt="cisco" title="CISCO IT ESSENTIAL" class="logos2"></div></li>
                             </ul>
                         </li>
                     </ul>
@@ -124,7 +125,7 @@
     <div class="caja-titulos"><h2 id="h2-margen-proy"><span style="color:rgba(41, 128, 185);">_</span>PROYECTOS<span style="color:rgba(41, 128, 185);">_</span></h2></div>
     <ul class="ul-proectos">
        <li class="li-proyectos"><button onclick="mostrarcaja1()"><div class="div-proyectos"><img src="assets/images/VER MAS.png" alt="capturas" title="ver proyecto" id="imagen_capturas2"></div></button><div id="posicion-tec"><h5>Pagina Web</h5><div id="flex"><img src="assets/images/csslogo2.png" alt="logo de css3" title="logo de css3" id="tecnologias_logo"><img src="assets/images/html.png" alt="html logo" title="logo Html" id="tecnologias_logo"></div></div>
-        <div class="proyecto_carpeta"><p id="texto-experiencia"><u>Repositorio</u></p><a href="https://github.com/carlosdelos/Blog-Carlos-Backend-Developer" target="_blank"><img src="assets/images/git hub.png" alt="ver codigo" title="ver codigo" id="icon-contacto"></a></div></li>
+        <div class="proyecto_carpeta"><p id="texto-experiencia"><u>Repositorio</u></p><a href="https://github.com/carlosdelos/Blog-Carlos-Backend-Developer" target="_blank"><div class="square"><img src="assets/images/githublogo.png" alt="ver codigo" title="ver codigo" id="icon-contacto"></div></a></div></li>
        <li class="li-proyectos"><button id="cursor-none" onclick="mostrarcaja2()"><div class="div-proyectos"><img src="assets/images/construcion.png"  alt="en construcion" id="imagen_capturas3"></div></button><div id="posicion-tec"><h5>Construyendo</h5></div>
         <div class="proyecto_carpeta"><img id="display-none" src="assets/images/git hub.png" alt="ver codigo" title="ver codigo" id="icon-contacto"></div></li>
        <li class="li-proyectos"><button id="cursor-none" onclick="mostrarcaja3()"><div class="div-proyectos"><img src="assets/images/construcion.png" alt="en construcion" id="imagen_capturas3"></div></button><div id="posicion-tec"><h5>Construyendo</h5></div>
@@ -147,7 +148,7 @@
     </section>
     <section id="conoceme">
         <div class="caja-sobremi">
-            <div class="medio_fondo" id="medio_f"></div>
+            <div class="medio_f"></div>
             <div class="caja-titulos"><h2><span style="color:rgba(41, 128, 185);">_</span>CONÓCEME<span style="color:rgba(41, 128, 185);">_</span></h2></div>
             <ul class="ul-sobremi">
                 <li class="li-foto-experiencia"><div>
@@ -191,7 +192,7 @@
                     </ul>
                 </div></li>
                 <li id="li-foto-experiencia1"><div class="texto-sobremi">
-                    <p id="p-sobremi">&#x1f44b;¡Hola! Soy Carlos Arroyo, <strong>joven desarrollador Backend.</strong><br>
+                    <p class="p-sobremi">&#x1f44b;¡Hola! Soy Carlos Arroyo, <strong>joven desarrollador Backend.</strong><br>
                         <br>Estoy continuamente desarrollando mis proyectos y llevando a la práctica todo lo aprendido, cada vez que pongo me pongo en marcha mi incesable hambre de <strong>conocimiento</strong> me obliga a profundizar en todas las herramientas que lo rodean, ¡aunque siempre hay espacio para más en esta fiesta de la tecnología!<br>
                         <br>Antes de meterme en el mundo del código, estuve en el lado físico de la tecnología. Donde nació la necesidad de aprender más sobre la magia detrás de cada byte. Todo ello me impulsó a dar el salto al desarrollo.&#x1f4bb;<br>
                         <br>&#x1f680;Mi misión: contribuir en <strong>proyectos colaborativos</strong> en entornos <strong>laborales</strong>, sí, aunque trabajar solo a veces suena bien, quiero compañía!!&#x1f604;<br>
@@ -200,7 +201,7 @@
                 <ul class="ul-botones-sobremi">
                     <li><div class="botones-sobremi"><a href="download/CARLOS ARROYO CV.pdf" download="Carlos_Arroyo_CV"><div class="descarga"><p id="p-boton">Descarga CV</p></div></a></div></li>
                     <li><div class="botones-sobremi"><a href="download/CERTIFICACIONES.pdf" download="Carlos_Arroyo_Certificaciones"><div class="descarga"><p id="p-boton">Descarga Certificaciones</p></div></a></div></li>
-                    <li><div class="botones-sobremi" id="quitar"><a href="#contacto"><div class="descarga" id="quitar"><p id="p-boton">Contacto</p></div></a></div></li>
+                    <li><div class="botones-sobremi" id="quitar"><a href="#contacto"><div class="descarga" id="quitar"><p id="p-boton3">Contacto</p></div></a></div></li>
                 </ul>
                 </li>
             </ul>
@@ -210,20 +211,20 @@
         <div class="caja-contacto">
             <div class="caja-titulos" id="caja-titulos2"><h2><span style="color:rgba(41, 128, 185);">_</span>CONTACTO<span style="color:rgba(41, 128, 185);">_</span></h2></div>
             <ul class="ul-contacto">
-                <li class="li-contacto"><div class="email"><p id="p-sobremi">carloslospinos@gmail.com</p></div><div id="copiarmail"><img src="assets/images/copy.png" alt="copy" title="copiar" id="copy"></div></li>
+                <li class="li-contacto"><div class="email"><p class="p-sobremi">carloslospinos@gmail.com</p></div><div id="copiarmail"><img src="assets/images/copy.png" alt="copy" title="copiar" id="copy"></div></li>
                 <li class="li-contacto">
                     <ul class="ul-iconos-contacto">
-                        <li><div class="cajas-iconos"><a href="https://linkedin.com/in/carlos-arroyo-dev" target="_blank" rel="nofollow"><img src="assets/images/linkedin.png" alt="ir linkedin" title="icono ir linkedin" id="icon-contacto"></a></div></li>
-                        <li><div class="cajas-iconos"><a href="https://wa.me/34679966708/?text=Llamame%20o%20Escribeme!!!" target="_blank" rel="nofollow"><img src="assets/images/icon_whats.png" alt="ir whastapp" title="icono ir whastapp" id="icon-contacto"></a><div><p id="tf">+34 679 966 708</p></div></div></li>
-                        <li><div class="cajas-iconos"><a href="https://maps.app.goo.gl/k21v4xRRpaoS8129A" target="_blank" rel="nofollow"><img src="assets/images/ubica.png" alt="ir ubicacion google" title="icono ubicacion google" id="icon-contacto"><address>Madrid<br>28032</address></a></div></li>
+                        <li><div class="square" id="cajas-iconos"><a href="https://linkedin.com/in/carlos-arroyo-dev" target="_blank" rel="nofollow"><img src="assets/images/linkedin.png" alt="ir linkedin" title="icono ir linkedin" id="icon-contactolink"></a></div></li>
+                        <li><div class="square" id="cajas-iconos"><a href="https://wa.me/34679966708/?text=Llamame%20o%20Escribeme!!!" target="_blank" rel="nofollow"><img src="assets/images/icon_whats.png" alt="ir whastapp" title="icono ir whastapp" id="icon-contactootra"></a><div><p id="tf">+34 679 966 708</p></div></div></li>
+                        <li><div class="square" id="cajas-iconos"><a href="https://maps.app.goo.gl/k21v4xRRpaoS8129A" target="_blank" rel="nofollow"><img src="assets/images/ubica.png" alt="ir ubicacion google" title="icono ubicacion google" id="icon-contactootra"><address>Madrid<br>28032</address></a></div></li>
                     </ul>
                 </li>
                 <li><div id="texto-otras-redes"></div>
                     <div class="li-contacto">
                     <ul class="ul-iconos-contacto">
-                        <li><div class="cajas-iconos" id="iconos-contacto-pequeños"><a href="https://github.com/carlosdelos" target="_blank" rel="nofollow"><img src="assets/images/git hub.png" alt="ir GitHub" title="icono GitHub" id="icon-contacto"></a></div></li>
-                        <li><div class="cajas-iconos" id="iconos-contacto-pequeños"><a href="https://forms.gle/ibft4BDs1ToQCX8o7" target="_blank" rel="nofollow"><img src="assets/images/encuesta.png" alt="ir a formulario" title="icono link formulario google" id="icon-contacto"><p id="tf">¡te contacto!</p></a></div></li>
-                        <li><div class="cajas-iconos" id="iconos-contacto-pequeños"><a href="https://www.instagram.com/carlosdelos/?hl=es" target="_blank" rel="nofollow"><img src="assets/images/instagram.png" alt="ir instagram" title="icono instagram" id="icon-contacto"></a></div></li>
+                        <li><div class="square" id="iconos-contacto-pequeños"><a href="https://github.com/carlosdelos" target="_blank" rel="nofollow"><img src="assets/images/githbmorado.png" alt="ir GitHub" title="icono GitHub" id="icon-contacto"></a></div></li>
+                        <li><div class="square" id="iconos-contacto-pequeños"><a href="https://forms.gle/ibft4BDs1ToQCX8o7" target="_blank" rel="nofollow"><img src="assets/images/formulariologo.png" alt="ir a formulario" title="icono link formulario google" id="icon-contactootra"><p id="tf">¡te contacto!</p></a></div></li>
+                        <li><div class="square" id="iconos-contacto-pequeños"><a href="https://www.instagram.com/carlosdelos/?hl=es" target="_blank" rel="nofollow"><img src="assets/images/instagramlogo.png" alt="ir instagram" title="icono instagram" id="icon-contactootra"></a></div></li>
                     </ul>
                     </div>
                 </li>
@@ -235,7 +236,7 @@
     <footer>
         <div class="piepagina">
             <ul class="ul-footer">
-                <li class="li-footer1"><div class="imagen-ubicacion"><address><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d57798.25128049678!2d-3.6250517447023265!3d40.416683632526876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1730292273507!5m2!1ses!2ses" width="100%" height="100%" style="border:1px solid gray;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="ubicacion mapa google"></iframe></div><div><address><p id="p-adress">Madrid</p><br><p id="p-adress">telefono: +34 679966708</p><br><p id="p-adress">carloslospinos@gmail.com</p></address></div></li>
+                <li class="li-footer1"><div class="imagen-ubicacion"><address><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d57798.25128049678!2d-3.6250517447023265!3d40.416683632526876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1730292273507!5m2!1ses!2ses" width="100%" height="100%" style="border:1px solid gray;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="ubicacion mapa google"></iframe></div><div><address><p id="p-adress" >Madrid</p><br><p id="p-adress">telefono: +34 679966708</p><br><p id="p-adress">carloslospinos@gmail.com</p></address></div></li>
                 <li class="li-footer1">
                     <ul class="grid-logo-footer">
                         <li class="li-logos"><div class="logos-footer"><a href="https://digitechfp.com/" target="_blank" rel="nofollow"><img src="assets/images/digi.png" alt="digitech fp" title="iciono digitechfp" id="icon-contacto"></a></div></li>
@@ -245,7 +246,7 @@
                     </ul>
                 </li>
                 <li class="li-footer">
-                 <div><p id="p-sobremi">Pagina Web creado por Carlos Arroyo ©</p></div>
+                 <div><p class="p-sobremi" id="textobn">Pagina Web creado por Carlos Arroyo ©</p></div>
                  <div><p id="p-sobremi2">"Medir el progreso del desarrollo de software por líneas de código <br> es como medir el progreso de la construcción de un avión por su peso"
                     -- Bill Gates</p></div>
                  <div>
