@@ -1,9 +1,4 @@
 :root {
-  
-  --background-color:;
-    
-    
-  --text-color:;
     --primary-color: #4a90e2; /* Color principal */
   --box-shadow: 0px 2px 4px rgba(41, 128, 185), 0px 0px 8px rgba(105, 158, 194, 0.815);
   --box-shadowhover: 0px 8px 10px rgba(41, 128, 185), 0px 0px 10px rgba(105, 158, 194, 0.815);
