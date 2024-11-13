@@ -111,7 +111,7 @@
     z-index: 10;
     margin: auto;
     top: -100vh;
-    opacity: 98%;
+    opacity: 99%;
     box-shadow: 0px 0px 30px #0062c6, 0px 6px 13px rgb(0 135 223);
     border-radius: 20px;
     overflow-y: scroll;
@@ -154,7 +154,7 @@
     margin-inline-start: 12px;
     font-family: 'texto-peq';
     margin-top: 10px;
-    color: white;
+    color: rgb(223, 223, 223);
     font-size: 20px;
     margin-left: 4%;
     margin-right: 4%;
