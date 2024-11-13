@@ -39,6 +39,8 @@ document.querySelectorAll('#copiarmail').forEach(element => {
     element.classList.toggle('dark-mode');});
 document.querySelectorAll('.boton_modo').forEach(element => {
     element.classList.toggle('dark-mode');});
+document.querySelectorAll('.boton_modo2').forEach(element => {
+    element.classList.toggle('dark-mode');});
 document.querySelectorAll('#cajaoculta1').forEach(element => {
         element.classList.toggle('dark-mode');});
 

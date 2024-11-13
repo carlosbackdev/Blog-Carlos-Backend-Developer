@@ -33,6 +33,22 @@
 {
     background: radial-gradient(circle, rgba(80, 80, 80, 0) -83%, rgb(236, 221, 13) -6%, rgba(80, 80, 80, 0.8) 30%);
 }
+.boton_modo2{
+    position: relative;
+    left: -1%;
+    top: 54px;
+    cursor: pointer;
+    z-index: 2;
+    width: 35px;
+    height: 35px;
+    margin: auto;
+    background: radial-gradient(circle, rgba(224, 185, 8, 0) -100%, rgb(236, 221, 13) 15%, rgba(20, 20, 20, 0.8) 81%);
+    opacity: 78%;
+}
+.boton_modo2.dark-mode
+{
+    background: radial-gradient(circle, rgba(80, 80, 80, 0) -83%, rgb(236, 221, 13) -6%, rgba(80, 80, 80, 0.8) 30%);
+}
 .bombilla
 {
     position: absolute; 
@@ -206,7 +222,9 @@
     object-position: center;
     margin-top: 20px;
     border-radius: 50px;
-
+    position: relative;
+    z-index: 0;
+    top: -32px;
 }
 #imagen_capturas3
 {
@@ -1534,6 +1552,10 @@ address
         width: 0px;
         height: 0px;
     }
+    #p-boton3
+    {
+        color: transparent;
+    }
     h2
     {
         font-size: 26px;
@@ -1552,6 +1574,10 @@ address
         width: 12px;
         height: 12px;
     }
+    .medio_f{
+        height: 83%;
+        left:0;
+        }
 
 }
 
@@ -1905,16 +1931,13 @@ address
         width: 100%;
         height: 40vh;
     }
-    .medio_f{
-    height: 83%;
-    left:0;
-    }
     .boton_modo
     {
-        width: 10px;
-        height: 10px;
+        width: 11px;
+        height: 11px;
         top: 5px;
-        left: 1px;
+        left: 4px;
+        opacity: 70%;
     }
     .bombilla
     {
