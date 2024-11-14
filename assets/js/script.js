@@ -1,7 +1,22 @@
-function mostrarcaja1(){
+function mostrarcaja1() {
     const caja = document.getElementById("cajaoculta1");
-    caja.classList.toggle("oculto");
+    if (caja.classList.contains("oculto")) {
+        caja.classList.remove("oculto");
+        // Forzar el navegador a realizar un reflujo para asegurar que se aplica el display: block
+        void caja.offsetWidth; 
+        caja.classList.add("visible");
+        caja.style.opacity = '1';
+        caja.style.transform = 'translateY(0)';
+    } else {
+        caja.style.opacity = '0';
+        caja.style.transform = 'translateY(-50px)';
+        setTimeout(() => {
+            caja.classList.remove("visible");
+            caja.classList.add("oculto");
+        }, 300); // Tiempo de la transición
+    }
 }
+
 function mostrarcaja2(){
     const caja = document.getElementById("cajaoculta2");
     caja.classList.toggle("oculto");
@@ -45,4 +60,45 @@ document.querySelectorAll('#cajaoculta1').forEach(element => {
         element.classList.toggle('dark-mode');});
 
 });
+
+// Asegúrate de que el DOM esté completamente cargado antes de ejecutar el script
+document.addEventListener('DOMContentLoaded', function() {
+    // Seleccionar el iframe del video y el botón de reproducción
+    var iframe = document.getElementById('vimeo-video');
+    var playButton = document.getElementById('play-button');
+
+    // Verifica si el iframe se ha cargado correctamente
+    if (iframe) {
+        // Inicializar el reproductor de Vimeo
+        var player = new Vimeo.Player(iframe);
+
+        // Añadir el evento de clic al botón de reproducción
+        playButton.addEventListener('click', function() {
+            // Reproducir el video
+            player.play().then(function() {
+                // Ocultar la imagen de portada una vez que el video comienza a reproducirse
+                playButton.style.display = 'none';
+            }).catch(function(error) {
+                console.error('Error al reproducir el video:', error);
+            });
+        });
+    } else {
+        console.error('El iframe de Vimeo no se encontró.');
+    }
+});
+
+// Asegúrate de que el DOM esté completamente cargado antes de ejecutar el script
+document.addEventListener('DOMContentLoaded', function() {
+    // Añadir un evento de scroll a la ventana
+    window.addEventListener('scroll', function() {
+        var cuadroDescargas = document.querySelector('.cuadro_descargas');
+        // Calcular la nueva opacidad basada en la cantidad de scroll
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        var opacity = 1 - (scrollTop / 1000); // Ajusta este valor según sea necesario
+        cuadroDescargas.style.opacity = Math.max(opacity, 0.3); // Asegurar que la opacidad no sea menor que 0
+    });
+});
+
+
+
 
