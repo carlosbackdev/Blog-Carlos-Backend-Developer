@@ -1,6 +1,6 @@
-# ¡WEB SITE OF CARLOS ARROYO!
+# ¡WEB SITE OF CARLOS ARROYO! 🌐
 
-## My personal Blog, enter and discover mi world.
+##	:grinning: My personal Blog, enter and discover mi world. 🌎
 
 Website developed with **HTML5**, **CSS3**, and **JavaScript**, adhering to **semantic tags** for optimal **SEO**. The styles are crafted in CSS, and some button functionalities are implemented with JavaScript. The project began with a wireframe sketch created in **Figma**.
 
