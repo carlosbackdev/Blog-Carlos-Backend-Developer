@@ -57,8 +57,12 @@ document.querySelectorAll('.boton_modo').forEach(element => {
 document.querySelectorAll('.boton_modo2').forEach(element => {
     element.classList.toggle('dark-mode');});
 document.querySelectorAll('#cajaoculta1').forEach(element => {
-        element.classList.toggle('dark-mode');});
-
+    element.classList.toggle('dark-mode');});
+document.querySelectorAll('.cuadro_descargas').forEach(element => {
+    element.classList.toggle('dark-mode');});
+document.querySelectorAll('#textazul').forEach(element => {
+    element.classList.toggle('dark-mode');});
+    
 });
 
 // Asegúrate de que el DOM esté completamente cargado antes de ejecutar el script
