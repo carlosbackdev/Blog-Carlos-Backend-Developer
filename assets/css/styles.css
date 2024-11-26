@@ -1429,6 +1429,12 @@ address
 {
     color: rgb(0, 0, 0);
 }
+#video-placeholder
+{
+    padding:51.43% 0 0 0;
+    position:relative;
+
+}
 
 
 

@@ -114,7 +114,26 @@ document.addEventListener('DOMContentLoaded', function() {
         cuadroDescargas.style.opacity = Math.max(opacity, 0.3); // Asegurar que la opacidad no sea menor que 0
     });
 });
+document.getElementById('play-button').addEventListener('click', function() {
+    var placeholder = document.getElementById('video-placeholder');
+    var iframe = document.createElement('iframe');
+    iframe.src = "https://player.vimeo.com/video/1029450978?badge=0&autopause=0&player_id=0&app_id=58479&dnt=1";
+    iframe.frameBorder = "0";
+    iframe.allow = "autoplay; fullscreen; picture-in-picture; clipboard-write";
+    iframe.style.position = "absolute";
+    iframe.style.top = "0";
+    iframe.style.left = "0";
+    iframe.style.width = "100%";
+    iframe.style.height = "100%";
+    iframe.title = "Carlos Arroyo Backend presentacion";
+    placeholder.innerHTML = '';
+    placeholder.appendChild(iframe);
 
+    // Cargar el script de Vimeo solo cuando se inserte el iframe
+    var script = document.createElement('script');
+    script.src = "https://player.vimeo.com/api/player.js";
+    document.body.appendChild(script);
+});
 
 
 

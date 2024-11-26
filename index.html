@@ -59,16 +59,21 @@
                         </li>
                     </ul>
                 </div>      
-                    <div class="cuadrado-play">
-                        <div class="play">
-                            <div style="padding:51.43% 0 0 0;position:relative;"><iframe loading="lazy" id="vimeo-video" src="https://player.vimeo.com/video/1029450978?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Carlos Arroyo Backend presentacion"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-                            <div class="videocapa" id="play-button"><img src="assets/images/fondocarlospng2.webp" alt="play imagen de portada" title="imagen de portada" class="play2">
-                                <div class="play-but">
-                                    <svg viewBox="0 0 100 100" width="80%" height="80%"> <polygon points="35,25 70,50 35,75" fill="white" opacity="80%" /></svg>
-                                </div>
+                <div class="cuadrado-play">
+                    <div class="play">
+                     <div id="video-placeholder">
+                            <iframe loading="lazy" id="vimeo-video" src="https://player.vimeo.com/video/1029450978?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%; border-radius: 25px;" title="Carlos Arroyo Backend presentacion"></iframe><script src="https://player.vimeo.com/api/player.js"></script>
+                        <div class="videocapa" id="play-button" style="position:absolute;top:0;left:0;width:100%;height:100%;display:flex;align-items:center;justify-content:center;cursor:pointer;">
+                            <img src="assets/images/fondocarlospng2.webp" alt="play imagen de portada" title="imagen de portada" class="play2">
+                            <div class="play-but">
+                                <svg viewBox="0 0 100 100" width="80%" height="80%"> 
+                                    <polygon points="35,25 70,50 35,75" fill="white" opacity="80%" />
+                                </svg>
                             </div>
                         </div>
+                     </div>
                     </div>
+                </div>
                     <div class="cuadro_descargas">
                     <ul class="ul-cv" id="id-cv">
                         <li class="li-cv2" id="hidden"><h2 id="textobackend2">backend <span id="textazul">developer</span></h2></li>
