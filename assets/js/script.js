@@ -90,6 +90,18 @@ document.addEventListener('DOMContentLoaded', function() {
         console.error('El iframe de Vimeo no se encontró.');
     }
 });
+document.addEventListener('DOMContentLoaded', function() {
+    var coverImage = document.getElementById('cover-image');
+    if (coverImage) {
+        coverImage.addEventListener('click', function() {
+            gtag('event', 'cover_image_view', {
+                'event_category': 'Interaction',
+                'event_label': 'Cover Image',
+                'value': 1
+            });
+        });
+    }
+});
 
 // Asegúrate de que el DOM esté completamente cargado antes de ejecutar el script
 document.addEventListener('DOMContentLoaded', function() {
