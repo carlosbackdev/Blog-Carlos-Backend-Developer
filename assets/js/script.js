@@ -2,7 +2,6 @@ function mostrarcaja1() {
     const caja = document.getElementById("cajaoculta1");
     if (caja.classList.contains("oculto")) {
         caja.classList.remove("oculto");
-        // Forzar el navegador a realizar un reflujo para asegurar que se aplica el display: block
         void caja.offsetWidth; 
         caja.classList.add("visible");
         caja.style.opacity = '1';
@@ -13,13 +12,26 @@ function mostrarcaja1() {
         setTimeout(() => {
             caja.classList.remove("visible");
             caja.classList.add("oculto");
-        }, 300); // Tiempo de la transición
+        }, 300); 
     }
 }
 
 function mostrarcaja2(){
     const caja = document.getElementById("cajaoculta2");
-    caja.classList.toggle("oculto");
+    if (caja.classList.contains("oculto")) {
+        caja.classList.remove("oculto");
+        void caja.offsetWidth; 
+        caja.classList.add("visible");
+        caja.style.opacity = '1';
+        caja.style.transform = 'translateY(0)';
+    } else {
+        caja.style.opacity = '0';
+        caja.style.transform = 'translateY(-50px)';
+        setTimeout(() => {
+            caja.classList.remove("visible");
+            caja.classList.add("oculto");
+        }, 300); 
+    }
 }
 function mostrarcaja3(){
     const caja = document.getElementById("cajaoculta3");
@@ -134,6 +146,4 @@ document.getElementById('play-button').addEventListener('click', function() {
     script.src = "https://player.vimeo.com/api/player.js";
     document.body.appendChild(script);
 });
-
-
 

@@ -60,24 +60,24 @@
                 </div>      
                 <div class="cuadrado-play">
                     <div class="play">
-                     <div id="video-placeholder">
-                            <iframe loading="lazy" id="vimeo-video" src="https://player.vimeo.com/video/1029450978?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%; border-radius: 25px;" title="Carlos Arroyo Backend presentacion"></iframe><script src="https://player.vimeo.com/api/player.js"></script>
-                        <div class="videocapa" id="play-button" style="position:absolute;top:0;left:0;width:100%;height:100%;display:flex;align-items:center;justify-content:center;cursor:pointer;">
-                            <img src="assets/images/fondocarlospng2.webp" alt="play imagen de portada" title="imagen de portada" class="play2">
-                            <div class="play-but">
-                                <svg viewBox="0 0 100 100" width="80%" height="80%"> 
-                                    <polygon points="35,25 70,50 35,75" fill="white" opacity="80%" />
-                                </svg>
+                        <div id="video-placeholder">
+                                <iframe loading="lazy" id="vimeo-video" src="https://player.vimeo.com/video/1029450978?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%; border-radius: 25px;" title="Carlos Arroyo Backend presentacion"></iframe><script src="https://player.vimeo.com/api/player.js"></script>
+                            <div class="videocapa" id="play-button" style="position:absolute;top:0;left:0;width:100%;height:100%;display:flex;align-items:center;justify-content:center;cursor:pointer;">
+                                <img src="assets/images/fondocarlospng2.webp" alt="play imagen de portada" title="imagen de portada" class="play2">
+                                <div class="play-but">
+                                    <svg viewBox="0 0 100 100" width="80%" height="80%"> 
+                                        <polygon points="35,25 70,50 35,75" fill="white" opacity="80%" />
+                                    </svg>
+                                </div>
                             </div>
                         </div>
-                     </div>
                     </div>
                 </div>
                     <div class="cuadro_descargas">
                     <ul class="ul-cv" id="id-cv">
                         <li class="li-cv2" id="hidden"><h2 id="textobackend2">backend <span id="textazul">developer</span></h2></li>
                         <li class="li-cv2"><a href="download/CARLOS ARROYO CV.pdf" download="Carlos_Arroyo_CV" title="descargar mi curriculum"><div class="descarga"><p id="p-boton">Descarga CV</p></div></a></li>
-                        <li class="li-cv2"><a href="mailto:carloslospinos@gmail.com?subject=¡Hola!%20te%20escribo%20con%20el%20asunto%20:" title="descargar mis Certificaciones"><div class="descarga"><p id="p-boton2">carlosbackdev<span id="p-boton2">@</span>gmail.com</p></div></a></li>
+                        <li class="li-cv2"><a href="mailto:carloslospinos@gmail.com?subject=¡Hola!%20te%20escribo%20con%20el%20asunto%20:" title="descargar mis Certificaciones"><div class="descarga"><p id="p-boton">Email</p></div></a></li>
                         <li class="li-cv2" id="hidden"><h2 id="textobackend2"><span id="textazul">software</span> engineer</h2></li>
                     </ul>
                     </div>
@@ -139,26 +139,81 @@
     <div class="caja-proyectos" id="c12">
     <div class="caja-titulos"><h2 id="h2-margen-proy"><span id="span">_</span>PROYECTOS<span id="span">_</span></h2></div>
     <ul class="ul-proectos">
-       <li class="li-proyectos"><button onclick="mostrarcaja1()"><div class="div-proyectos"><div class="boton_modo2"></div><img src="assets/images/VER MAS.webp" alt="capturas" title="ver proyecto" id="imagen_capturas2"></div></button><div id="posicion-tec"><h5>PÁGINA WEB</h5><div id="flex"><img src="assets/images/csslogo2.png" alt="logo de css3" title="logo de css3" id="tecnologias_logo"><img src="assets/images/html.png" alt="html logo" title="logo Html" id="tecnologias_logo"></div></div>
-        <div class="proyecto_carpeta"><p id="texto-experiencia"><u>Repositorio</u></p><a href="https://github.com/carlosbackdev/Blog-Carlos-Backend-Developer" target="_blank" title="ir al repositorio"><div class="square"><img src="assets/images/githublogo.png" alt="ver codigo" title="ver codigo" id="icon-contacto"></div></a></div></li>
-       <li class="li-proyectos"><button id="cursor-none" onclick="mostrarcaja2()"><div class="div-proyectos"><img src="assets/images/construcion.png"  alt="en construcion" id="imagen_capturas3"></div></button><div id="posicion-tec"><h5>Construyendo</h5></div>
-        <div class="proyecto_carpeta"><img id="display-none" src="assets/images/githublogo.png" alt="ver codigo" title="ver codigo" id="icon-contacto"></div></li>
-       <li class="li-proyectos"><button id="cursor-none" onclick="mostrarcaja3()"><div class="div-proyectos"><img src="assets/images/construcion.png" alt="en construcion" id="imagen_capturas3"></div></button><div id="posicion-tec"><h5>Construyendo</h5></div>
-        <div class="proyecto_carpeta"><img id="display-none" src="assets/images/githublogo.png" alt="ver codigo" title="ver codigo" id="icon-contacto"></div></li>
-    </ul>
+        <li class="li-proyectos"><button onclick="mostrarcaja1()">
+            <div class="new" style="background-color: transparent;"></div>
+            <div class="div-proyectos">
+                <div class="boton_modo2"></div><img src="assets/images/VER MAS.webp" alt="capturas pagina web" title="ver proyecto" id="imagen_capturas2"></div></button><div id="posicion-tec"><h5>PÁGINA WEB</h5>
+                    <div id="flex">
+                        <img src="assets/images/csslogo2.png" alt="logo de css3" title="logo de css3" id="tecnologias_logo">
+                        <img src="assets/images/html.png" alt="html logo" title="logo Html" id="tecnologias_logo">
+                    </div></div>
+                <div class="proyecto_carpeta"><a href="https://github.com/carlosbackdev/Blog-Carlos-Backend-Developer" target="_blank" title="ir al repositorio"><div class="square">
+                    <img src="assets/images/githublogo.png" alt="ver codigo" title="ver codigo" id="icon-contacto"></div></a>
+            </div>
+        </li>
+        <li class="li-proyectos"><button onclick="mostrarcaja2()">
+            <div class="new">NUEVO</div>
+            <div class="div-proyectos">
+                <img src="assets/images/construcion.png"  alt="en construcion" id="imagen_capturas3"></div></button><div id="posicion-tec"><h5>Spring Boot API Rest & Web</h5></div>
+            <div class="proyecto_carpeta"><img src="assets/images/githublogo.png" alt="ver codigo" title="ver codigo" id="icon-contacto"></div></li>
+        <li class="li-proyectos"><button onclick="mostrarcaja3()">
+            <div class="new">NUEVO</div>
+            <div class="div-proyectos">                
+                <div class="boton_modo2"></div><img src="assets/images/aplicacion-escritorio-portada.webp" alt="capturas aplicacion de escritorio" id="imagen_capturas2"></div></button><div id="posicion-tec"><h5>Software Desktop Java</h5>
+                <div id="flex">
+                    <img src="assets/images/javalog.svg" alt="logo de css3" title="logo de css3" id="tecnologias_logo">
+                    <img src="assets/images/mysqllogo.png" alt="html logo" title="logo Html" id="tecnologias_logo">
+                    <img src="assets/images/Apache_HTTP_Server-Logo.wine.svg" alt="html logo" title="logo Html" id="tecnologias_logo">
+                    <img src="assets/images/NetBeans-Logo.wine.svg" alt="html logo" title="logo Html" id="tecnologias_logo">
+                </div>
+            </div>            
+            <div class="proyecto_carpeta" style="display: flex; flex-direction: row; justify-content: center; gap: 33px;">
+                <a href="https://github.com/carlosbackdev/ElecIdea-App-Desktop-Java" target="_blank" title="ir al repositorio"><div class="square"><img src="assets/images/githublogo.png" alt="ver codigo" title="ver codigo" id="icon-contacto"></div></a>
+                <a href="https://www.elecidea.com/" target="_blank" title="ir al repositorio"><div class="square"><img src="assets/images/red.png" alt="ver codigo" title="ver codigo" id="icon-contacto"></div></a>
+        </div>
+        </li>            
+        </ul>
     <div class="oculto" id="cajaoculta1"><br><h2>Página Web</h2><div class="capturas"><img src="assets/images/CAPTURA HTML.webp" alt="capturas pagina web" title="capturas de la pagina web" id="imagen_capturas"><img src="assets/images/plataformas.webp" alt="plataformas disponibles web" title="plataformas donde ver la web" id="imagen_capturas" >
-        <p id="texto_proy">Página web creada con lenguajes de programación web:  <strong>HTML5 y CSS3</strong>. Respetando las <strong>etiquetas semánticas</strong> para un buen manejo de <strong>SEO</strong>, los estilos han sido creados en CSS3, y algunas <strong>funciones</strong> de botones han sido añadidas con <strogn>JavaScript</strogn>. Además el proyecto se ha creado a partir de un boceto en <strong>wireframe con Figma</strong>.<br>
+        <p id="texto_proy">Página web creada con lenguajes de programación web: <strong>HTML5 y CSS3</strong>. Respetando las <strong>etiquetas semánticas</strong> para un buen manejo de <strong>SEO</strong>, los estilos han sido creados en CSS3, y algunas <strong>funciones</strong> de botones han sido añadidas con <strogn>JavaScript</strogn>. Además el proyecto se ha creado a partir de un boceto en <strong>wireframe con Figma</strong>.<br>
         <br>El proyecto ha tenido una duración de programación de un mes, partiendo sin ningún tipo de conocimiento en los lenguajes usados, y pensada, creada y diseñada desde 0. Es la primera página web creada por mí.<br>
         <br>El diseño ha sido inspirado en una línea minimalista y con colores neutros y claros, y posteriormente añadido una version con modo dark, con colores oscuros y de neon.Todo ello realizado de manera "<strogn>responsive</strogn>" siendo adaptada a cualquier <strong>pantalla o dispositivo móvil</strong>, para conocer más sobre su <strong>código</strong> pinche en el cuadro de <strong>GitHub</strong>.<br>
         <br>Como se puede ver en el análisis del <strong>rendimiento en PageSpeed Insights</strong>, el código como la semántica y el SEO han obtenido una excelente puntuación con un <strong>96 en rendimiento y un 100 en SEO</strong>, es cierto que al renderizar y escalar las imágenes de gran tamaño a un formato móvil, el procesado es un poco más lento y el rendimiento baja muy levemente.<br>
-        <br>Los archivos del proyecto se almacenan en un repositorio en GitHub, el cual está conectado directamente al editor de código <strong>Visual Studio Code</strong>. El repositorio esta  a su vez conectado directamente al <strong>Host Netlify</strong>, el cuál alberga el servidor y se gestiona el dominio.<br><br>
+        <br>Los ahivos del proyecto se almacenan en un repositorio en GitHub, el cual está conectado directamente al editor de código <strong>Visual Studio Code</strong>. El repositorio esta  a su vez conectado directamente al <strong>Host Netlify</strong>, el cuál alberga el servidor y se gestiona el dominio.<br><br>
         </p>
         <img src="assets/images/rendimiento.webp" alt="rendimiento web" title="rendimiento de la web google analityc" id="imagen_rendimiento">
         <iframe loading="lazy" src="https://www.linkedin.com/embed/feed/update/urn:li:share:7260614443904974850" height="300vh" width="90%" frameborder="0" allowfullscreen="" title="Publicación integrada" overflow-y="scroll" overflow-x="hidden"></iframe>
     </div><button onclick="mostrarcaja1()" id="volver1"></button></div>
-    <div class="oculto" id="display-none" id="cajaoculta2"><h2>Backend Proyect</h2><div></div><button onclick="mostrarcaja2()" id="volver2"></button></div>
-    <div class="oculto" id="display-none" id="cajaoculta3"><h2>Fullstack Proyect</h2><div></div><button onclick="mostrarcaja3()" id="volver2"></button></div>
-    </div>
+    <div class="oculto" id="cajaoculta2"><br><h2>ElecIdea API & Web</h2><div class="capturas"><img src="assets/images/CAPTURA HTML.webp" alt="capturas pagina web" title="capturas de la pagina web" id="imagen_capturas"><img src="assets/images/plataformas.webp" alt="plataformas disponibles web" title="plataformas donde ver la web" id="imagen_capturas" >
+    </div><button onclick="mostrarcaja2()" id="volver1"></button></div>
+        <div class="oculto" id="cajaoculta3"><br><h2>ElecIdea APP</h2><div></div>
+            <div class="capturas">
+                <video class="video" width="90%" height="95%" controls>
+                    <source src="assets/movie/ElecIdea2.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
+            <p id="texto_proy">Aplicación de escritorio desarrollada en Java y MySQL, diseñada específicamente para gestionar funciones clave en el sector eléctrico. El sistema es una solución CRUD, que permite una gestión eficiente de diversas operaciones empresariales.
+            <br><br><br><span><strong>Características Principales:</strong><br>
+                <br><strong>- Gestión de Facturas:</strong> Administra fácilmente las facturas de los clientes, visualiza el estado de los pagos y genera documentos de facturación.
+                <br><strong>- Gestión de Clientes:</strong> Almacena y realiza un seguimiento de la información detallada de los clientes, facilitando la administración de cada cuenta.
+                <br><strong>- Gestión de Proyectos:</strong> Monitorea y sigue el progreso de los proyectos en curso, incluyendo los aspectos financieros y las etapas de finalización.
+                <br><strong>- Automatización de Facturas:</strong> Exporta automáticamente las facturas en formato Excel y envíalas por correo electrónico a los clientes, optimizando el proceso de facturación.
+                <br><strong>- Seguimiento del Crecimiento Empresarial:</strong> Realiza un seguimiento de la evolución de los clientes y el crecimiento del negocio, facilitando la toma de decisiones estratégicas.  
+            <br><br><br>rc<span><strong>Tecnologías Utilizadas:</strong><br>
+                <br><strong>-Java</strong> para el desarrollo central de la aplicación.
+                <br><strong>-MySQL</strong> para la gestión de la base de datos.
+                <br><strong>-Swing</strong> para la interfaz gráfica de usuario (GUI).
+                <br><strong>-Flatlaf</strong> para un diseño moderno de tema oscuro.
+                <br><strong>-Apache POI</strong> para generar documentos en formato XLSX.
+                <br><strong>-JavaMail</strong> para el envío automático de correos electrónicos.
+                <br><strong>-Java Ant</strong> para la compilación y construcción de la aplicación.
+                <br><strong>-NetBeans</strong> como entorno de desarrollo.
+            <br><br><br><span><strong>Utilidad:</strong><br>
+                <br>La aplicación está diseñada para agilizar los procesos empresariales en el sector eléctrico, ofreciendo una solución integral para la facturación, gestión de clientes y seguimiento de proyectos. El sistema permite una gestión de datos fácil y una comunicación eficiente con los clientes, incluyendo el envío automático de facturas.
+                <br><br><a href="https://www.elecidea.com/" style="color: white;"><u> > Descarga < </u></a>
+            </p>
+            <img src="assets/images/plataformas.webp" alt="plataformas disponibles web" title="plataformas donde ver la web" id="imagen_capturas" >
+            <button onclick="mostrarcaja3()" id="volver1"></button></div>
+        </div>
     </div>
     </section>
     <section id="conoceme">
