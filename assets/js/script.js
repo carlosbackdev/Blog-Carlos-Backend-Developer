@@ -147,3 +147,20 @@ document.getElementById('play-button').addEventListener('click', function() {
     document.body.appendChild(script);
 });
 
+const copyButton = document.getElementById('copy');
+
+    copyButton.addEventListener('click', () => {
+        // Obtener el texto del correo del elemento <p> con la clase 'email'
+        const emailText = document.querySelector('.email .p-sobremi').textContent.trim();
+
+        // Crear un input temporal para seleccionar el texto y copiarlo
+        const tempInput = document.createElement('input');
+        document.body.appendChild(tempInput);
+        tempInput.value = emailText;  // Establece el valor del correo al input temporal
+        tempInput.select();  // Selecciona el texto del input
+        document.execCommand('copy');  // Ejecuta el comando de copiar
+        document.body.removeChild(tempInput);  // Elimina el input temporal después de copiar
+
+        // Opcional: Mostrar un mensaje o alerta indicando que se copió
+        alert("Correo copiado al portapapeles");
+    });
